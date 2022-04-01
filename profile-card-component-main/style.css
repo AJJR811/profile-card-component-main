@@ -1,0 +1,42 @@
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --Name-stats-font-size: 18px;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh sans", "sans-serif";
+    font-family: "Quicksand", "sans-serif";
+    
+}
+
+.profile_card{
+    border-radius: 8px;
+    width: 85%  ;
+    margin: 0 auto;
+}
+.profile_card_top{
+    background-image: url("../assets/bg-pattern-card.svg")
+}
+.profile_card_top img{
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.profile_card-bottom_datos-seguidores{
+    display: flex;
+    justify-content: space-around;
+}
+.profile_card-bottom_datos-seguidores div :nth-child(1){
+    font-size: var(--Name-stats-font-size);
+    font-weight: 700;
+    text-align: center;
+}
+.profile_card-bottom_datos-seguidores div :nth-child(2){
+    font-weight: 400;
+    color: var(--Dark-gray);
+    font-size: 14px;
+    text-align: center;
+}
