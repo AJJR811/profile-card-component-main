@@ -1,86 +1,85 @@
-:root{
+:root {
     --Dark-cyan: hsl(185, 75%, 39%);
     --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --Dark-grayish-blue: hsl(227, 10%, 46%);
     --Dark-gray: hsl(0, 0%, 59%);
-    --Name-stats-font-size: 18px;
+
+    --Name-stats-Font-size: 18px;
 }
-body{
+
+html,
+body {
     margin: 0;
     box-sizing: border-box;
-    font-family: "Kumbh sans", "sans-serif";
-    font-family: "Quicksand", "sans-serif";
-    
+    font-family: "Kumbh Sans", sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
-body{
+body {
     background: var(--Dark-cyan);
     height: 100vh;
-    background-image: url(../profile-card-component-main/assets/bg-pattern-bottom.svg);
-    background-position: right;
+    background-image: url('../assets/bg-pattern-bottom.svg');
+    background-position: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
-.profile_card{
+.profile-card {
     border-radius: 8px;
-    width: 85%  ;
+    width: 85%;
     margin: 0 auto;
-    background-color: #ffffffff;
+    background-color: #ffffff;
     overflow: hidden;
-    
 }
-.profile_card_top{
+.profile-card-top {
     background-image: url("../assets/bg-pattern-card.svg");
     height: 120px;
     position: relative;
     display: flex;
     justify-content: center;
-}
-
-.profile_card_top img{
-    border-radius: 50%;
-    border: 2px solid white;
-    position: absolute;
-    bottom: -5px;
-
-}
-
-.profile-card-bottom_datos-profile > div{
-    display: flex;
-    height:  120 px;
-    align-items: flex-end;
-    justify-content: center;
-}   
-
-.profile-card-bottom_datos-profile > div span:nth-child(1){
-    font-size: var(--Name-stats-font-size);
-    font-weight: 700;
-    margin-right: 8px;
-}
-
-.profile-card-bottom_datos-profile > div span:nth-child(2){
-    font-size: var(--Name-stats-font-size);
-    font-weight: 400;
-    color: var(--Dark-gray);
     
 }
 
-.profile-card-bottom_datos-profile > p{
+.profile-card-top img {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    bottom: -53px;
+}
+.profile-card-bottom__datos-profile > div {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.profile-card-bottom__datos-profile > div span:nth-child(1){
+    font-size: var(--Name-stats-Font-size);
+    font-weight: 700;
+    margin-right: 8px;
+}
+.profile-card-bottom__datos-profile > div span:nth-child(2){
+    font-size: var(--Name-stats-Font-size);
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+.profile-card-bottom__datos-profile p{
     text-align: center;
+    color: var(--Dark-gray);
+    font-size: 14px;
+}
 
-} 
-
-.profile-card-bottom_datos-seguidores{
+.profile-card-bottom__datos-seguidores {
     display: flex;
     justify-content: space-around;
+    border-top: 1px solid var(--Dark-gray);
 }
-.profile-card-bottom_datos-seguidores div :nth-child(1){
-    font-size: var(--Name-stats-font-size);
+.profile-card-bottom__datos-seguidores div p:nth-child(1) {
+    font-size: var(--Name-stats-Font-size);
     font-weight: 700;
     text-align: center;
 }
-.profile-card-bottom_datos-seguidores div :nth-child(2){
+.profile-card-bottom__datos-seguidores div p:nth-child(2) {
     font-weight: 400;
     color: var(--Dark-gray);
     font-size: 14px;
